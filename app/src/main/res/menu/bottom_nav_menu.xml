@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_storages"
+        android:icon="@drawable/ic_storage"
+        android:title="Storages"/>
+
+    <item
+        android:id="@+id/navigation_rents"
+        android:icon="@drawable/ic_rents"
+        android:title="Aluguéis"/>
+
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/ic_clients"
+        android:title="Clientes"/>
+
+</menu>

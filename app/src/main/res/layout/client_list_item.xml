@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/btnClientMoreMenu"
+        android:layout_width="39dp"
+        android:layout_height="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="&#8942;"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_storage"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/nomeCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#39393a"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/idCliente"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nomeCliente"
+        app:layout_constraintTop_toBottomOf="@+id/nomeCliente" />
+
+    <TextView
+        android:id="@+id/inputStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="FECHADO"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/labelStatus"
+        app:layout_constraintTop_toTopOf="@+id/labelStatus" />
+
+    <TextView
+        android:id="@+id/labelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total da Conta:"
+        app:layout_constraintStart_toEndOf="@+id/itemIcon"
+        app:layout_constraintTop_toBottomOf="@+id/labelStatus" />
+
+    <TextView
+        android:id="@+id/totalConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Total"
+        app:layout_constraintStart_toEndOf="@+id/labelTotal"
+        app:layout_constraintTop_toBottomOf="@+id/labelStatus" />
+
+    <TextView
+        android:id="@+id/idCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ID 12"
+        app:layout_constraintBottom_toBottomOf="@+id/itemIcon"
+        app:layout_constraintEnd_toEndOf="@+id/itemIcon"
+        app:layout_constraintStart_toStartOf="@+id/itemIcon"
+        app:layout_constraintTop_toTopOf="@+id/itemIcon"
+        app:layout_constraintVertical_bias="0.292" />
+</androidx.constraintlayout.widget.ConstraintLayout>

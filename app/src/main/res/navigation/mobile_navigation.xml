@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_storages">
+
+    <fragment
+        android:id="@+id/navigation_storages"
+        android:name="com.example.storagemanager.ui.home.StorageFragment"
+        android:label="Storages"
+        tools:layout="@layout/fragment_storages" />
+
+    <fragment
+        android:id="@+id/navigation_rents"
+        android:name="com.example.storagemanager.ui.dashboard.AlugueisFragment"
+        android:label="Aluguéis"
+        tools:layout="@layout/fragment_alugueis" />
+
+    <fragment
+        android:id="@+id/navigation_clients"
+        android:name="com.example.storagemanager.ui.notifications.ClientesFragment"
+        android:label="Clientes"
+        tools:layout="@layout/fragment_clientes" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/newRent"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Registrar Aluguel" />
+    <item
+        android:id="@+id/editStorage"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Editar" />
+
+    <item
+        android:id="@+id/deleteStorage"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Remover"/>
+</menu>
